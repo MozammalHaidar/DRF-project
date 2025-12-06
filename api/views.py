@@ -121,15 +121,6 @@ class EmployeeDetail(generics.RetrieveUpdateDestroyAPIView):
 #         return Response(status=status.HTTP_204_NO_CONTENT)
 """
 
-# class EmployeeViewset(viewsets.ModelViewSet):
-#     queryset = Employee.objects.all()
-#     serializer_class = EmployeeSerializer
-#     pagination_class = CustomPagination
-#     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
-#     filterset_class = EmployeeFilter
-#     search_fields = ['name', 'email', 'emp_id']
-#     ordering_fields = ['name']
-
 class EmployeeViewset(viewsets.ModelViewSet):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
@@ -140,4 +131,4 @@ class EmployeeViewset(viewsets.ModelViewSet):
     filterset_class = EmployeeFilter
 
     search_fields = ['name', 'email', 'emp_id']
-    ordering_fields = ['name', 'emp_id']
+    ordering_fields = ['name', 'emp_id','salary']

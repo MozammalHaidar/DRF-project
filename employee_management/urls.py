@@ -25,7 +25,6 @@ urlpatterns = [
 
     # web-applications endpoint
     
-    # path('students/', include('students.urls')),
     # path('employees/', include('employees.urls')),
     
 ]
